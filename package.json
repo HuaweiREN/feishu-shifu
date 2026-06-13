@@ -1,0 +1,31 @@
+{
+  "name": "feishu-shifu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Feishu bot that reads user-authorized docs, calls DeepSeek, and replies with Feishu cards.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fastify/formbody": "latest",
+    "@larksuiteoapi/node-sdk": "^1.66.1",
+    "dotenv": "latest",
+    "fastify": "latest",
+    "https-proxy-agent": "^9.1.0",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
